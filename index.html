@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Locations We Serve</title>
+  <style>
+    .cmm-usa {
+      display: block;
+      width: 25%;
+      margin: 0 auto;
+      position: relative;
+      padding: 10px;
+    }
+    .cmm-usa svg {
+      width: 100%;
+      z-index: 99;
+    }
+    .cmm-usa svg path {
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10;
+    }
+    .cmm-usa-hover-state-info {
+      position: relative;
+      margin: -40px auto 20px auto;
+      display: none;
+      box-sizing: border-box;
+      padding: 0.75em;
+      width: 300px;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 0 20px #999;
+      font-size: 14px;
+      z-index: 100;
+    }
+    .cmm-usa-hover-state-info span {
+      display: block;
+      line-height: 1.5em;
+    }
+    .cmm-usa-hover-state-info span:first-child {
+      font-weight: bold;
+      text-align: center;
+    }
+    .cmm-usa-listview {
+      width: 100%;
+      text-align: center;
+      margin: 1em 0;
+    }
+    .cmm-usa-listview ul {
+      vertical-align: top;
+      list-style: none;
+      display: inline-block;
+      text-align: left;
+      margin: 0;
+      padding: 0;
+    }
+    .cmm-usa-listview ul li {
+      padding: 0;
+      margin: 0;
+    }
+    .cmm-usa-listview ul li span {
+      display: inline-block;
+      position: relative;
+      height: 12px;
+      width: 12px;
+      border-radius: 12px;
+      color: black;
+      text-align: center;
+      line-height: 12px;
+      font-weight: bold;
+      border: 1px solid #999;
+      opacity: 1.0;
+      margin-right: 0.5em;
+    }
+    .cmm-usa-listview ul li span::after {
+      content: "\2B9E";
+      position: relative;
+      color: #333;
+      font-size: 12px;
+    }
+    .cmm-usa-listview ul li a {
+      display: inline-block;
+      margin: 0.5em 1em 0.5em 0;
+      color: #ccc;
+      text-decoration: none;
+    }
+    .cmm-usa-listview ul li a.cmm-usa-live-link {
+      color: #000;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .cmm-usa-title {
+      width: 100%;
+      text-align: center;
+      font-weight: bold;
+    }
+    .cmm-usa-credit-link {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="cmm-usa">
+    <!-- Paste your generated SVG clickable map code here -->
+    <!-- Example placeholder -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 959 593">
+      <a xlink:href="#california">
+        <title>California</title>
+        <path d="M100,400 L150,350 L180,380 L160,420 Z" fill="#ccc" stroke="#333"/>
+      </a>
+      <a xlink:href="#texas">
+        <title>Texas</title>
+        <path d="M400,500 L460,480 L470,520 L420,540 Z" fill="#ccc" stroke="#333"/>
+      </a>
+    </svg>
+  </div>
+
+  <!-- Content for each state below -->
+  <div id="california" style="padding: 50px;">
+    <h2>California</h2>
+    <p>We proudly serve the state of California. Here’s more information about services offered...</p>
+  </div>
+
+  <div id="texas" style="padding: 50px;">
+    <h2>Texas</h2>
+    <p>Welcome to our Texas service region. We offer support in all major cities and towns...</p>
+  </div>
+</body>
+</html>
